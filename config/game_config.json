@@ -1,0 +1,43 @@
+{
+    "display": {
+        "SCREEN_WIDTH": 1280,
+        "SCREEN_HEIGHT": 720,
+        "TARGET_FPS": 60,
+        "FULLSCREEN": false,
+        "SHOW_DEBUG": true
+    },
+    "performance": {
+        "MAX_AGENTS": 8,
+        "MAX_PARTICLES": 2000,
+        "ENABLE_VISUAL_EFFECTS": true,
+        "MULTI_THREADING": true
+    },
+    "game": {
+        "ROUND_LENGTH": 60,
+        "MAX_ROUNDS": 5,
+        "ZONE_SHRINK_RATE": 0.5,
+        "ZONE_DAMAGE": 1.0
+    },
+    "agent": {
+        "MAX_AGENTS": 8,
+        "AGENT_TYPES": [
+            "BasicAgent",
+            "NeuralAgent",
+            "EvolutionaryAgent", 
+            "FuzzyAgent",
+            "RuleBasedAgent"
+        ],
+        "ENABLE_TEAMS": true,
+        "TEAM_SIZE": 2
+    },
+    "resource": {
+        "MAX_NODES": 10,
+        "SPAWN_INTERVAL": 5,
+        "RESOURCE_TYPES": ["energy", "health", "shield"]
+    },
+    "combat": {
+        "DAMAGE_MULTIPLIER": 1.0,
+        "CRITICAL_CHANCE": 0.05,
+        "CRITICAL_MULTIPLIER": 2.0
+    }
+} 

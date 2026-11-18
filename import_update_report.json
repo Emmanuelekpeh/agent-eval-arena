@@ -1,0 +1,192 @@
+{
+  "timestamp": "2025-04-12T03:58:40.181261",
+  "stats": {
+    "total_files_scanned": 96,
+    "files_updated": 8,
+    "files_skipped": 88,
+    "files_with_errors": 0,
+    "imports_updated": 11,
+    "imports_deprecated": 0,
+    "start_time": 1744459119.8467708
+  },
+  "stats_summary": {
+    "elapsed_time": "0.33 seconds",
+    "files_updated": 8,
+    "files_skipped": 88,
+    "files_with_errors": 0
+  },
+  "updated_files": [
+    "examples\\team_agent_example.py",
+    "scripts\\reorganize_systems.py",
+    "systems\\system_integration.py",
+    "systems\\team_agent_integration.py",
+    "tests\\test_agents.py",
+    "tests\\test_system_manager.py",
+    "tests\\test_team_agent_integration.py",
+    "tests\\test_team_system.py"
+  ],
+  "skipped_files": [
+    "config.py",
+    "game_with_ai.py",
+    "main.py",
+    "__init__.py",
+    "agents\\__init__.py",
+    "agents\\advanced\\__init__.py",
+    "agents\\basic\\__init__.py",
+    "backup_20250412_035815\\systems\\agents\\agent_system.py",
+    "backup_20250412_035815\\systems\\agents\\formation_system.py",
+    "backup_20250412_035815\\systems\\agents\\team_system.py",
+    "backup_20250412_035815\\systems\\combat\\battle_mechanics.py",
+    "backup_20250412_035815\\systems\\combat\\combat_mechanics.py",
+    "backup_20250412_035815\\systems\\combat\\combat_system.py",
+    "backup_20250412_035815\\systems\\core\\event_system.py",
+    "backup_20250412_035815\\systems\\core\\system_manager.py",
+    "backup_20250412_035815\\systems\\environment\\resource_system.py",
+    "backup_20250412_035815\\systems\\environment\\terrain_system.py",
+    "backup_20250412_035815\\systems\\learning\\learning_system.py",
+    "config\\migrate_config.py",
+    "config\\unified_config.py",
+    "config\\__init__.py",
+    "docs\\__init__.py",
+    "examples\\__init__.py",
+    "scripts\\consolidate_duplicates.py",
+    "scripts\\update_imports.py",
+    "scripts\\verify_organization.py",
+    "scripts\\__init__.py",
+    "systems\\analytics.py",
+    "systems\\combat_zones.py",
+    "systems\\environment.py",
+    "systems\\formation_movement.py",
+    "systems\\game_manager.py",
+    "systems\\performance_monitor.py",
+    "systems\\quality_manager.py",
+    "systems\\spatial_system.py",
+    "systems\\training_mode.py",
+    "systems\\visual_feedback.py",
+    "systems\\__init__.py",
+    "systems\\agents\\agent_factory.py",
+    "systems\\agents\\agent_system.py",
+    "systems\\agents\\base_agent.py",
+    "systems\\agents\\communication_system.py",
+    "systems\\agents\\formation_system.py",
+    "systems\\agents\\mlp_agent.py",
+    "systems\\agents\\perceptron_agent.py",
+    "systems\\agents\\relationship_system.py",
+    "systems\\agents\\team_agent.py",
+    "systems\\agents\\team_system.py",
+    "systems\\agents\\__init__.py",
+    "systems\\agents\\__pycache__\\__init__.py",
+    "systems\\analytics\\__init__.py",
+    "systems\\analytics\\__pycache__\\__init__.py",
+    "systems\\combat\\battle_mechanics.py",
+    "systems\\combat\\combat_mechanics.py",
+    "systems\\combat\\combat_system.py",
+    "systems\\combat\\__init__.py",
+    "systems\\combat\\__pycache__\\__init__.py",
+    "systems\\core\\base_system.py",
+    "systems\\core\\event_system.py",
+    "systems\\core\\performance.py",
+    "systems\\core\\performance_monitor.py",
+    "systems\\core\\system_manager.py",
+    "systems\\core\\__init__.py",
+    "systems\\core\\__pycache__\\__init__.py",
+    "systems\\environment\\resource_sharing.py",
+    "systems\\environment\\resource_system.py",
+    "systems\\environment\\terrain_system.py",
+    "systems\\environment\\__init__.py",
+    "systems\\environment\\__pycache__\\__init__.py",
+    "systems\\learning\\behavior_learning.py",
+    "systems\\learning\\experience_memory.py",
+    "systems\\learning\\genetic_algorithm.py",
+    "systems\\learning\\learning_system.py",
+    "systems\\learning\\strategy_adaptation.py",
+    "systems\\learning\\__init__.py",
+    "systems\\ui\\__init__.py",
+    "systems\\ui\\__pycache__\\__init__.py",
+    "systems\\utils\\__init__.py",
+    "systems\\visualization\\__init__.py",
+    "systems\\__pycache__\\__init__.py",
+    "tests\\test_team_agent.py",
+    "tests\\test_unified_config.py",
+    "tests\\__init__.py",
+    "tools\\doc_generator.py",
+    "tools\\__init__.py",
+    "utils\\logging.py",
+    "utils\\__init__.py",
+    "weights\\__init__.py"
+  ],
+  "error_files": [],
+  "changes": {
+    "examples\\team_agent_example.py": [
+      {
+        "type": "updated",
+        "old": "from systems.team_system import TeamSystem",
+        "new": "from systems.agents.team_system import TeamSystem"
+      }
+    ],
+    "scripts\\reorganize_systems.py": [
+      {
+        "type": "updated",
+        "old": "from systems.system_manager import system_manager', ",
+        "new": "from systems.core.system_manager import system_manager', "
+      }
+    ],
+    "systems\\system_integration.py": [
+      {
+        "type": "updated",
+        "old": "from systems.relationship_system import RelationshipSystem, RelationshipFactor",
+        "new": "from systems.agents.relationship_system import RelationshipSystem, RelationshipFactor"
+      },
+      {
+        "type": "updated",
+        "old": "from systems.communication_system import (",
+        "new": "from systems.agents.communication_system import ("
+      },
+      {
+        "type": "updated",
+        "old": "from systems.resource_sharing import (",
+        "new": "from systems.environment.resource_sharing import ("
+      }
+    ],
+    "systems\\team_agent_integration.py": [
+      {
+        "type": "updated",
+        "old": "from systems.team_system import TeamSystem",
+        "new": "from systems.agents.team_system import TeamSystem"
+      }
+    ],
+    "tests\\test_agents.py": [
+      {
+        "type": "updated",
+        "old": "from systems.agent_system import *",
+        "new": "from systems.agents.agent_system import *"
+      }
+    ],
+    "tests\\test_system_manager.py": [
+      {
+        "type": "updated",
+        "old": "from systems.system_manager import SystemManager, SystemEventType",
+        "new": "from systems.core.system_manager import SystemManager, SystemEventType"
+      },
+      {
+        "type": "updated",
+        "old": "from systems.base_system import BaseSystem",
+        "new": "from systems.core.base_system import BaseSystem"
+      }
+    ],
+    "tests\\test_team_agent_integration.py": [
+      {
+        "type": "updated",
+        "old": "from systems.team_system import TeamSystem",
+        "new": "from systems.agents.team_system import TeamSystem"
+      }
+    ],
+    "tests\\test_team_system.py": [
+      {
+        "type": "updated",
+        "old": "from systems.system_manager import SystemEventType",
+        "new": "from systems.core.system_manager import SystemEventType"
+      }
+    ]
+  }
+}
